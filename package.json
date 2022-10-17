@@ -1,0 +1,30 @@
+{
+  "name": "moch-exam-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:client && npm run test:server",
+    "dev": "concurrently npm:dev:client npm:dev:server",
+    "test:coverage": "npm run test:client:coverage && npm run test:server:coverage",
+    "test:client": "cd client && npm test",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freebattie/moch-exam-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freebattie/moch-exam-api/issues"
+  },
+  "homepage": "https://github.com/freebattie/moch-exam-api#readme",
+  "devDependencies": {
+    "concurrently": "^7.4.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1"
+  }
+}
